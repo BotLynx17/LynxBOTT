@@ -1275,6 +1275,34 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
+		case 'nulis2':
+				 // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(8)
+				reply(ind.wait())
+				ct = await getBuffer(`https://api.zeks.xyz/api/nulis?text=${ct}&apikey=benbenz`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'nulis3':
+				 // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(8)
+				ll1 = ct.split("|")[0];
+                ll2 = ct.split("|")[1];
+                ll3 = ct.split("|")[2];
+                ll4 = ct.split("|")[3];
+				reply(ind.wait())
+				ct = await getBuffer(`https://api.zeks.xyz/api/magernulis?nama=${ll1}&kelas=${ll2}&text=${ll3}&tinta=${ll4}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
 		case 'galaxtext':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -1443,6 +1471,30 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				bh = body.slice(11)
 				reply(ind.wait())
 				bh = await getBuffer(`https://mhankbarbar.tech/api/htahta?apiKey=Q7MLdUnVSkXgLmQE9liX&text=${bh}`)
+				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'hartatata2':
+				 // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				bh = body.slice(12)
+				reply(ind.wait())
+				bh = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${bh}&apikey=benbenz`)
+				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'emoji2img':
+				 // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				bh = body.slice(11)
+				reply(ind.wait())
+				bh = await getBuffer(`https://api.zeks.xyz/api/emoji-image?apikey=benbenz&emoji=${bh}`)
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1969,6 +2021,18 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, hasil, text, {quoted: iky})
 					await limitAdd(sender)
 					break
+		case 'github': // Update By RzkyO & ItsmeikyXSec404
+					tels = body.slice(8) 
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					anu = await fetchJson(`https://api.shizukaa.xyz/api/stalkgithub?apikey=itsmeiky633&user=${tels}`, {method: 'get'})
+					buffer7 = await getBuffer(anu.avatar_url)
+					if (anu.error) return reply(anu.error)
+					capt = `*HASIL*\n\n*id* : ${anu.id}\n*node_id* : ${anu.node_id}\n*gravatar_id* : ${anu.gravatar_id}\n*html_url* : ${anu.html_url}\n*type* : ${anu.type}\n*site_admin* : ${anu.site_admin}\n*name* : ${anu.name}\n*company* : ${anu.company}\n*blog* : ${anu.blog}\n*location* : ${anu.location}\n*email* : ${anu.email}\n*bio* : ${anu.bio}\n*twitter_username* : ${anu.twitter_username}\n*public_repos* : ${anu.public_repos}\n*public_gists* : ${anu.public_gists}\n*followers* : ${anu.followers}\n*following* : ${anu.following}\n*created_at* : ${anu.created_at}\n*updated_at* : ${anu.updated_at}`
+					itsmeiky.sendMessage(from, buffer7, image, {quoted: iky, caption: capt})
+					await limitAdd(sender)
+					break
                 case 'slap':
 					kapankah = body.slice(1)
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -2010,6 +2074,45 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					reply(teks.trim())
 					await limitAdd(sender)
 					break
+			    case 'liputan6': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.zeks.xyz/api/liputan6?apikey=benbenz`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Judul* : ${i.title}\n*Url* : ${i.url}\n*Keterangan* : ${i.ket}\n*Category* : ${i.category}\n*Time* : ${i.time}\n=================\n`
+					}
+					reply(teks.trim())
+					await limitAdd(sender)
+					break
+				case 'foxnews': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.zeks.xyz/api/foxnews?apikey=benbenz`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Judul* : ${i.title}\n*Url* : ${i.url}\n*Country* : ${i.country}\n*Content* : ${i.content}\n*Time* : ${i.time}\n=================\n`
+					}
+					reply(teks.trim())
+					await limitAdd(sender)
+					break
+				case 'nickff': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=benbenz`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Nick* : ${i}\n=================\n`
+					}
+					reply(teks.trim())
+					await limitAdd(sender)
+					break
 				case 'newsinfo': // Update By ItsmeikyXSec404 & RzkyO
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -2024,6 +2127,19 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					reply(teks.trim())
 					await limitAdd(sender)
 					break 
+				case 'film': // Update By RzkyO & ItsmeikyXSec404	
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.zeks.xyz/api/film/2?q=${body.slice(6)}&apikey=benbenz`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
+					}
+					reply(teks.trim())
+					await limitAdd(sender)
+					break
                 case 'beritahoax':
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -2507,6 +2623,16 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					gatauda = body.slice(8)					
 					anu = await fetchJson(`https://api.zeks.xyz/api/pantun?apikey=apivinz`, {method: 'get'})
 					reply(anu.result.pantun)
+					await limitAdd(sender)
+					break
+		case 'jadwaltv':
+					 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					gatauda = body.slice(10)					
+					anu = await fetchJson(`https://api.zeks.xyz/api/jadwaltv?channel=${gatauda}&apikey=benbenz`, {method: 'get'})
+					reply(anu.result)
 					await limitAdd(sender)
 					break
 		case 'katadilan': // Update By ItsmeikyXSec404 & RzkyO
