@@ -54,7 +54,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '$'
 blocked = []   
 limitawal = 40
-memberlimit = 0
+memberlimit = 40
 cr = '*SHIZUKA THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
@@ -1613,6 +1613,28 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
 				break
+				case 'tolol': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply('Teks nya mana ? titit ?')
+				gatauda = body.slice(6)
+				reply(ind.wait())
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=WEMPYGANSS&name=${gatauda}`, {method: 'get'})
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
+				await limitAdd(sender)
+				break
+				case 'emoji2img': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply('emoji nya mana ? titit ?')
+				gatauda = body.slice(11)
+				reply(ind.wait())
+				buffer = await getBuffer(`https://api.zeks.xyz/api/emoji-image?apikey=benbenz&emoji=${gatauda}`, {method: 'get'})
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
+				await limitAdd(sender)
+				break
                 case 'memeindo':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -2116,6 +2138,19 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender)
 					break 
 				case 'film': // Update By RzkyO & ItsmeikyXSec404	
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.zeks.xyz/api/film/2?q=${body.slice(6)}&apikey=benbenz`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
+					}
+					reply(teks.trim())
+					await limitAdd(sender)
+					break
+				case 'film2': // Update By RzkyO & ItsmeikyXSec404	
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
