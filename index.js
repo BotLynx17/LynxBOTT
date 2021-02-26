@@ -1486,18 +1486,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
-		case 'emoji2img':
-				 // Update By RzkyO & ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply(ind.wrongf())
-				bh = body.slice(11)
-				reply(ind.wait())
-				bh = await getBuffer(`https://api.zeks.xyz/api/emoji-image?apikey=benbenz&emoji=${bh}`)
-				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
 		case 'cblackpink':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -2777,6 +2765,26 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(anu.result)
                     itsmeiky.sendMessage(from, buffer, video, )
 				    break
+				case 'tiktoknowm': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (args.length < 1) return reply('Urlnya mana tong?')
+				if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.lv)
+					 ige = body.slice(12)
+                     anu = await fetchJson(`http://lolhuman.herokuapp.com/api/tiktok?apikey=WEMPYGANSS&url=${args[0]}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buffer = await getBuffer(anu.result.link)
+                    itsmeiky.sendMessage(from, buffer, video, )
+				    break
+				 case 'ccgenerator': // Update By RzkyO & ItsmeikyXSec404
+					if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+                   reply(`_[❕] Loading_`)
+				   anu = await fetchJson(`https://videfikri.com/api/ccgenerator/`, {method:'get'})
+				   teks = `*Hasil CCGenerator*\n*♻️NUMBER*: ${anu.result.card.number}\n*♻️TYPE*: ${anu.result.card.network}\n*♻️CVV*: ${anu.result.card.cvv}\n*♻️PIN*: ${anu.result.card.pin}\n*♻️MONEY*: ${anu.result.card.balance}\n*♻️EXPIRE-MONTH*: *Custom*\n*♻️EXPIRE-YEAR*: *Custume*\n*♻️COUTRY*: ${anu.result.customer.country}\n*♻️NAME*: ${anu.result.customer.name}\n*♻️ADDRESS*: ${anu.result.customer.address}`
+				   itsmeiky.sendMessage(from, teks, text, {quoted: iky})
+				   await limitAdd(sender)
+				   break
 					/*
                 case 'kickall':
 					if (!isOwner) return reply(ind.ownerb())
