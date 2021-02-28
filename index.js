@@ -3240,11 +3240,370 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					break
 		case 'help': 
 		case 'menu':
-					 // Fix Bug By ItsmeikyXSec404				
+//anjing INFO DEVELOPER jangan di ganti bangsat!!
+//cuma numpang nama doang lu !!
+//kalau INFO DEVELOPER ga di ganti gw ikhlas !!
+//---------------------------
+//Fuck dont change INFO DEVELOPER !!
+//You only get your name fuck !!
+//If INFO DEVELOPER not in change, its okey!!
                  if (!isRegistered) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 					const uangku = checkATMuser(sender)
+                    wew = fs.readFileSync(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
+                    shiz = ` ◪ *INFO DEVELOPER*
+  ❏ Nama: ItsmeikyXSec404
+  ❏ Wa: wa.me/6281281872699
+  ❏ Ig: https://instagram.com/itsmeikyxsec404
+  ----------------------------------
+◪ *INFO SHIZUKA*
+  ❏ Nama: SHIZUKA 
+  ❏ Web: https://shizukaa.xyz/
+  ❏ Web Api: https://shizukaa.xyz/
+  ----------------------------------
+◪ *YOUR INFO*
+  ❏ Prefix: 「  ${prefix}  」
+  ❏ Nama: ${pushname}
+  ❏ Uang mu : Rp${uangku}
+  ❏ Nomer: ${sender.split("@")[0]}
+  ❏ XP: ${getLevelingXp(sender)}/${reqXp}
+  ❏ Level: ${getLevelingLevel(sender)}
+  ❏ User register : ${_registered.length}
+  
+◪ *ABOUT*
+  │
+  ├─ ❏ ${prefix}info
+  ├─ ❏ ${prefix}snk
+  ├─ ❏ ${prefix}lpr 
+  ├─ ❏ ${prefix}request
+  ├─ ❏ ${prefix}blocklist
+  ├─ ❏ ${prefix}ping
+  ├─ ❏ ${prefix}buypremium
+  ├─ ❏ ${prefix}hargaprem
+  ├─ ❏ ${prefix}menupict
+  ├─ ❏ ${prefix}menuowner
+  │
+  │◪ *LIST OF MENU SHIZUKA*
+  │
+  ├─ ❏ ${prefix}nsfwloli
+  ├─ ❏ ${prefix}asupan
+  ├─ ❏ ${prefix}wiki
+  ├─ ❏ ${prefix}spamcall
+  ├─ ❏ ${prefix}tebakgambar
+  ├─ ❏ ${prefix}babi
+  ├─ ❏ ${prefix}caklontong
+  ├─ ❏ ${prefix}katailham
+  ├─ ❏ ${prefix}katabijak
+  ├─ ❏ ${prefix}fakta
+  ├─ ❏ ${prefix}mimpi
+  ├─ ❏ ${prefix}husbu
+  ├─ ❏ ${prefix}imagemountain
+  ├─ ❏ ${prefix}loli
+  ├─ ❏ ${prefix}imagegame
+  ├─ ❏ ${prefix}imagecyberspace
+  ├─ ❏ ${prefix}imageislamic
+  ├─ ❏ ${prefix}blackpink
+  ├─ ❏ ${prefix}randomexo
+  ├─ ❏ ${prefix}randombts
+  ├─❏ ${prefix}menuownerwaifu
+  │
+  │◪ *MAKER*
+  │
+  ├─ ❏ ${prefix}nulis
+  ├─ ❏ ${prefix}nulis2
+  ├─ ❏ ${prefix}nulis3
+  ├─ ❏ ${prefix}nulis4
+  ├─ ❏ ${prefix}sticker
+  ├─ ❏ ${prefix}stickergif
+  ├─ ❏ ${prefix}toimg
+  ├─ ❏ ${prefix}hartatata
+  ├─ ❏ ${prefix}hartatata2
+  ├─ ❏ ${prefix}hartatata3
+  ├─ ❏ ${prefix}text2gif
+  ├─ ❏ ${prefix}tolol
+  ├─ ❏ ${prefix}quotemaker
+  ├─ ❏ ${prefix}galaxtext
+  ├─ ❏ ${prefix}pupycut
+  ├─ ❏ ${prefix}galaxstyle
+  ├─ ❏ ${prefix}hologram
+  ├─ ❏ ${prefix}textbyname
+  ├─ ❏ ${prefix}herrypoter
+  ├─ ❏ ${prefix}greanneon
+  ├─ ❏ ${prefix}logoepep
+  ├─ ❏ ${prefix}logoepep2
+  ├─ ❏ ${prefix}logoepep3
+  ├─ ❏ ${prefix}logoepep4
+  ├─ ❏ ${prefix}logoepep5
+  ├─ ❏ ${prefix}gamelogo
+  ├─ ❏ ${prefix}pornlogo
+  ├─ ❏ ${prefix}metallogo
+  │
+  │◪ *OTHER FITUR*
+  │
+  ├─ ❏ ${prefix}ssweb
+  ├─ ❏ ${prefix}hilih [teks]
+  ├─ ❏ ${prefix}alay [teks]
+  ├─ ❏ ${prefix}say [teks]
+  ├─ ❏ ${prefix}wiki [teks]
+  ├─ ❏ ${prefix}kbbi [teks]
+  ├─ ❏ ${prefix}map [teks]
+  ├─ ❏ ${prefix}kalkulator
+  ├─ ❏ ${prefix}lirik [teks]
+  ├─ ❏ ${prefix}brainly [teks]l
+  ├─ ❏ ${prefix}bitly
+  ├─ ❏ ${prefix}cuttly
+  ├─ ❏ ${prefix}meme
+  ├─ ❏ ${prefix}darkjoke
+  ├─ ❏ ${prefix}tinyurl
+  ├─ ❏ ${prefix}shrtco
+  ├─ ❏ ${prefix}chord [teks]
+  ├─ ❏ ${prefix}katabijak 
+  ├─ ❏ ${prefix}faktaunik 
+  ├─ ❏ ${prefix}coronainfo
+  ├─ ❏ ${prefix}holoh
+  ├─ ❏ ${prefix}halah
+  ├─ ❏ ${prefix}huluh
+  ├─ ❏ ${prefix}heleh
+  ├─ ❏ ${prefix}hurufterbalik
+  ├─ ❏ ${prefix}lirik
+  ├─ ❏ ${prefix}alay2
+  ├─ ❏ ${prefix}fml
+  ├─ ❏ ${prefix}katadilan
+  ├─ ❏ ${prefix}katabucin
+  ├─ ❏ ${prefix}katabucin2
+  ├─ ❏ ${prefix}cerpen
+  ├─ ❏ ${prefix}quotes
+  ├─ ❏ ${prefix}bacotanhacker
+  ├─ ❏ ${prefix}quotedoraemon
+  ├─ ❏ ${prefix}infofilm
+  ├─ ❏ ${prefix}igvideo
+  ├─ ❏ ${prefix}pantun
+  ├─ ❏ ${prefix}artinama [teks]
+  │
+  │◪ *INFORMATION*
+  │
+  ├─ ❏ ${prefix}bahasa
+  ├─ ❏ ${prefix}kodenegara
+  ├─ ❏ ${prefix}infogempa
+  ├─ ❏ ${prefix}infocuaca
+  ├─ ❏ ${prefix}infonomor
+  ├─ ❏ ${prefix}covidindo
+  ├─ ❏ ${prefix}covidglobal
+  ├─ ❏ ${prefix}ceknamaff
+  ├─ ❏ ${prefix}namaninja
+  ├─ ❏ ${prefix}ccgenerator
+  ├─ ❏ ${prefix}shrtco
+  ├─ ❏ ${prefix}newsinfo
+  ├─ ❏ ${prefix}tribunews
+  ├─ ❏ ${prefix}tiktokstalk
+  ├─ ❏ ${prefix}igstalk
+  ├─ ❏ ${prefix}nickff
+  ├─ ❏ ${prefix}quran
+  ├─ ❏ ${prefix}foxnews
+  ├─ ❏ ${prefix}liputan6
+  ├─ ❏ ${prefix}jadwalbola
+  ├─ ❏ ${prefix}film2
+  ├─ ❏ ${prefix}film
+  ├─ ❏ ${prefix}newsinfo
+  ├─ ❏ ${prefix}coronainfo
+  ├─ ❏ ${prefix}github
+  ├─ ❏ ${prefix}kurs
+  ├─ ❏ ${prefix}cersex
+  ├─ ❏ ${prefix}infofilm2
+  ├─ ❏ ${prefix}heroml
+  ├─ ❏ ${prefix}newsinfo
+  ├─ ❏ ${prefix}ceknamaml
+  │
+  │◪ *KERANG AJAIB*
+  │
+  ├─ ❏ ${prefix}gantengcek
+  ├─ ❏ ${prefix}cantikcek
+  ├─ ❏ ${prefix}sangecek
+  ├─ ❏ ${prefix}gaycek
+  ├─ ❏ ${prefix}lesbicek
+  ├─ ❏ ${prefix}watak
+  ├─ ❏ ${prefix}hobby
+  ├─ ❏ ${prefix}apakah
+  ├─ ❏ ${prefix}kapankah
+  ├─ ❏ ${prefix}bisakah
+  ├─ ❏ ${prefix}bagaimanakah
+  ├─ ❏ ${prefix}rate
+  │
+  │◪ *DOWNLOADER*
+  │
+  ├─ ❏ ${prefix}1cak
+  ├─ ❏ ${prefix}pinterest [teks]
+  ├─ ❏ ${prefix}ytmp3 [link]
+  ├─ ❏ ${prefix}ytmp4 [link]
+  ├─ ❏ ${prefix}tiktoknowm [link]
+  ├─ ❏ ${prefix}play [teks]
+  ├─ ❏ ${prefix}fototiktok
+  ├─ ❏ ${prefix}igpost [teks]
+  ├─ ❏ ${prefix}igtv
+  ├─ ❏ ${prefix}joox [teks]
+  │
+  │◪ *FIND TARGET*
+  │
+  ├─ ❏ ${prefix}mutual
+  ├─ ❏ ${prefix}next
+  │
+  │◪ *RANDOM PICTUE*
+  │
+  │ *ANIME*
+  ├─ ❏ ${prefix}loli
+  ├─ ❏ ${prefix}neko
+  ├─ ❏ ${prefix}waifu
+  ├─ ❏ ${prefix}animecry
+  ├─ ❏ ${prefix}animehug
+  ├─ ❏ ${prefix}osakana
+  ├─ ❏ ${prefix}naruto
+  ├─ ❏ ${prefix}anime
+  ├─ ❏ ${prefix}husbu
+  ├─ ❏ ${prefix}animegirl
+  ├─ ❏ ${prefix}animeboy
+  ├─ ❏ ${prefix}nekonime
+  │
+  │ *RANDOM KPOP*
+  ├─ ❏ ${prefix}randomkpop
+  ├─ ❏ ${prefix}randombts
+  ├─ ❏ ${prefix}randomexo
+  ├─ ❏ ${prefix}blackpink
+  │
+  │ *CARTOON*
+  ├─ ❏ ${prefix}doraemon
+  ├─ ❏ ${prefix}pokemon
+  │
+  │ *ANIMAL*
+  ├─ ❏ ${prefix}anjing
+  ├─ ❏ ${prefix}kucing
+  ├─ ❏ ${prefix}hamster
+  ├─ ❏ ${prefix}kelinci
+  │
+  │ *TRANSPORT*
+  ├─ ❏ ${prefix}mobil
+  ├─ ❏ ${prefix}motor
+  ├─ ❏ ${prefix}sepeda
+  │
+  │ *AESTHETIC*
+  ├─ ❏ ${prefix}aesthetic
+  ├─ ❏ ${prefix}bluesky
+  ├─ ❏ ${prefix}flower
+  ├─ ❏ ${prefix}icecream
+  ├─ ❏ ${prefix}pemandangan
+  │
+  │ *QUOTES*
+  ├─ ❏ ${prefix}quotes
+  ├─ ❏ ${prefix}quoteskehidupan
+  ├─ ❏ ${prefix}quotesislami
+  ├─ ❏ ${prefix}katabijak
+  ├─ ❏ ${prefix}katailham
+  ├─ ❏ ${prefix}quotesnasehat
+  ├─ ❏ ${prefix}quotesmotivasi
+  │
+  ├─◪ *LIMIT & UANG & LB*
+  │
+  ├─ ❏ ${prefix}limit
+  ├─ ❏ ${prefix}buylimit
+  ├─ ❏ ${prefix}buypremiumlimit
+  ├─ ❏ ${prefix}transfer
+  ├─ ❏ ${prefix}leaderboard
+  │
+  │◪ *GROUP*
+  │
+  ├─ ❏ ${prefix}promote [@tag]
+  ├─ ❏ ${prefix}demote [@tag]
+  ├─ ❏ ${prefix}tagall
+  ├─ ❏ ${prefix}listadmin
+  ├─ ❏ ${prefix}wakillist
+  ├─ ❏ ${prefix}premiumlist
+  ├─ ❏ ${prefix}banlist
+  ├─ ❏ ${prefix}blocklist
+  ├─ ❏ ${prefix}linkgc
+  ├─ ❏ ${prefix}mining
+  ├─ ❏ ${prefix}hidetag
+  ├─ ❏ ${prefix}grouplist
+  ├─ ❏ ${prefix}add [62]
+  ├─ ❏ ${prefix}kick [@tag]
+  ├─ ❏ ${prefix}setname
+  ├─ ❏ ${prefix}setdesc
+  ├─ ❏ ${prefix}setpp
+  ├─ ❏ ${prefix}listadmin
+  ├─ ❏ ${prefix}linkgc
+  ├─ ❏ ${prefix}leave
+  ├─ ❏ ${prefix}mining
+  ├─ ❏ ${prefix}level
+  ├─ ❏ ${prefix}grup [buka/tutup)
+  ├─ ❏ ${prefix}welcome [1/0]
+  ├─ ❏ ${prefix}nsfw [1/0]
+  ├─ ❏ ${prefix}antilink [1/0]
+  ├─ ❏ ${prefix}leveling [1/0]
+  ├─ ❏ ${prefix}simih [1/0]
+  │
+  │◪ *SOUND*
+  │
+  ├─ ❏ ${prefix}hai
+  ├─ ❏ ${prefix}hallo [only computer]
+  ├─ ❏ ${prefix}aine
+  ├─ ❏ ${prefix}soundplaydate [only computer]
+  ├─ ❏ ${prefix}soundbakahentai [only computer]
+  ├─ ❏ ${prefix}sayonichan [only computer]
+  ├─ ❏ ${prefix}gtts
+  │
+  │◪ *WIBU*
+  │
+  ├─ ❏ ${prefix}neonime
+  ├─ ❏ ${prefix}wait
+  │
+  │◪ *APK*
+  ├─ ❏ ${prefix}apkpure [teks]
+  ├─ ❏ ${prefix}happymod [teks]
+  ├─ ❏ ${prefix}moddroid [teks]
+  │
+  │◪ *18+ Nsfw*
+  │
+  ├─ ❏ ${prefix}blowjob
+  ├─ ❏ ${prefix}randomhentai
+  ├─ ❏ ${prefix}sfw
+  ├─ ❏ ${prefix}nsfw
+  ├─ ❏ ${prefix}randomsfw
+  ├─ ❏ ${prefix}randomnsfw
+  ├─ ❏ ${prefix}nsfwneko
+  │
+  │◪ *FUN*
+  │
+  ├─ ❏ ${prefix}truth
+  ├─ ❏ ${prefix}dare
+  ├─ ❏ ${prefix}slap
+  ├─ ❏ ${prefix}tampar
+  ├─ ❏ ${prefix}nangis
+  ├─ ❏ ${prefix}cium
+  ├─ ❏ ${prefix}simi
+  │
+  │◪ *OWNER*
+  │
+  ├─ ❏ ${prefix}setprefix
+  ├─ ❏ ${prefix}setreply
+  ├─ ❏ ${prefix}setppbot
+  ├─ ❏ ${prefix}block
+  ├─ ❏ ${prefix}unblock
+  ├─ ❏ ${prefix}setprefix
+  ├─ ❏ ${prefix}leave
+  ├─ ❏ ${prefix}kickall
+  ├─ ❏ ${prefix}event [1/0]
+  ├─ ❏ ${prefix}bc
+  ├─ ❏ ${prefix}bcgc
+  ├─ ❏ ${prefix}clone
+  ├─ ❏ ${prefix}clearall
+  │
+  │◪ *OTHER*
+  │
+  ├─ ❏ ${prefix}wame
+  ├─ ❏ ${prefix}qrcode
+  └─ ❏ ${prefix}afk
+  
+◪ *POWERED BY ITSMEIKYXSEC404*`
+                    itsmeiky.sendMessage(from, wew, image, { quoted: iky caption: shiz })
 					await costum(ind.menu(pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role), text, tescuk, cr)
 					break
 		case 'donasi':
@@ -3324,15 +3683,15 @@ itsmeiky.on('group-participants-update', async (anu) => {
 		case 'info':
 					me = itsmeiky.user
 					uptime = process.uptime()
-					teks = `*INFO OWNER*\n*Owner bot* : Muhammad Ridwan Reynaldy\n*No Owner* : wa.me/6281281872699\n*Ig owner* : www.instagram.com/anemio999\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
-					buffer = await getBuffer(`https://i.ibb.co/4jknX6w/pp.jpg`)
+					teks = `*INFO OWNER*\n*Owner bot* : ItsmeikyXSec404\n*No Owner* : wa.me/6281281872699\n*Ig owner* : www.instagram.com/itsmeikyxsec404\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
+					buffer = await getBuffer(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
 					itsmeiky.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 		case 'snk':
 					me = itsmeiky.user
 					uptime = process.uptime()
 					teks = `*Syarat & Ketentuan Shizuka BOT*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
-					buffer = await getBuffer(`https://i.ibb.co/4jknX6w/pp.jpg`)
+					buffer = await getBuffer(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
 					itsmeiky.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 		case 'lpr':
@@ -3357,8 +3716,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
                          				contextInfo: {mentionedJid: [nomor]},
                      			}
 					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
-					itsmeiky.sendMessage('6281315113882@s.whatsapp.net', options, text, {quoted: iky})
-					itsmeiky.sendMessage('6282148618789@s.whatsapp.net', options, text, {quoted: iky})
+					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
+					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
 					reply('REQUEST ANDA TELAH SAMPAI KE OWNER Shizuka BOT, Requests palsu atau main² tidak akan ditanggapi.')
 					break
 		case 'blocklist': 
