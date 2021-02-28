@@ -1546,6 +1546,16 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
+		case 'attp':
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					if (args.length < 1) return reply(ind.wrongf())
+					teks = body.slice(5)
+					atytyd = await getBuffer(`https://api.vhtear.com/textxgif?text=${teks}&apikey=c1d162b46e634f389efa1ac715f03d03`)
+					itsmeiky.sendMessage(from, atytyd, sticker, {quoted: iky})
+					await limitAdd(sender) 
+					break
 		case 'cblackpink':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -1703,6 +1713,16 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				gatauda = body.slice(8)
 				reply(ind.wait())
 				anu = await fetchJson(`https://api.zeks.xyz/api/memeindo?apikey=apivinz`, {method: 'get'})
+				buffer = await getBuffer(anu.result)
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
+				await limitAdd(sender)
+				break
+				case 'meme': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				reply(ind.wait())
+				anu = await fetchJson(`http://lolhuman.herokuapp.com/api/random/meme?apikey=7201f836013adbe80a4d4182`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
@@ -2909,6 +2929,17 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/film2?q=${ige}&apikey=BotWeA`)
 					buffer7 = await getBuffer(anu.result.thumbnail)
 					capt = `➸ Judul : ${anu.result.judul}\n*➸ Bahasa :* ${anu.result.bahasa}\n*➸ Negara :* ${anu.result.negara}\n*➸ Aktor :* ${anu.result.aktor}\n*➸ Boxoffice :* ${anu.result.boxoffice}\n*➸ Dirilis :* ${anu.result.dirilis}\n*➸ Durasi :* ${anu.result.durasi}\n*➸ Katagori :* ${anu.result.kategori}\n*➸ Metascore :* ${anu.result.metascore}\n*➸ Vote :* ${anu.result.voting_imdb}\n*➸ Negara :* ${anu.result.negara}\n*➸ Sinopsis :* ${anu.result.sinopsis}\n*➸ Penghargaan :* ${anu.result.penghargaan}`
+					itsmeiky.sendMessage(from, buffer7, image, {quoted: iky, caption: capt})
+					await limitAdd(sender)
+					break
+		case 'infofilm2': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					ige = body.slice(10)
+					anu = await fetchJson(`http://lolhuman.herokuapp.com/api/lk21?apikey=WEMPYGANSS&query=${ige}`)
+					buffer7 = await getBuffer(anu.result.thumbnail)
+					capt = `➸ Nama Film : ${anu.result.title}\n*➸ Link :* ${anu.result.link}\n*➸ Genre :* ${anu.result.genre}\n*➸ Views :* ${anu.result.views}\n*➸ Durasi :* ${anu.result.duration}\n*➸ Dirilis :* ${anu.result.tahun}\n*➸ Rating :* ${anu.result.rating}\n*➸ Description :* ${anu.result.desc}\n*➸ Aktor :* ${anu.result.actors}\n*➸ Location :* ${anu.result.location}\n*➸ Date Release :* ${anu.result.date_release}\n*➸ Language :* ${anu.result.language}\n*➸ Link Download :* ${anu.result.link_dl}`
 					itsmeiky.sendMessage(from, buffer7, image, {quoted: iky, caption: capt})
 					await limitAdd(sender)
 					break
