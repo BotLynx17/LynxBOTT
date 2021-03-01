@@ -2955,7 +2955,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, buffer7, image, {quoted: iky, caption: teks})
 				await limitAdd(sender)
 				break
-					case 'igvideo': // Update By ItsmeikyXSec404 & RzkyO				
+				case 'igvideo': // Update By ItsmeikyXSec404 & RzkyO				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (args.length < 1) return reply('Urlnya mana tong?')
@@ -3005,6 +3005,15 @@ itsmeiky.on('group-participants-update', async (anu) => {
                    reply(`_[❕] Loading_`)
 				   anu = await fetchJson(`https://videfikri.com/api/ccgenerator/`, {method:'get'})
 				   teks = `*Hasil CCGenerator*\n*♻️NUMBER*: ${anu.result.card.number}\n*♻️TYPE*: ${anu.result.card.network}\n*♻️CVV*: ${anu.result.card.cvv}\n*♻️PIN*: ${anu.result.card.pin}\n*♻️MONEY*: ${anu.result.card.balance}\n*♻️EXPIRE-MONTH*: *Custom*\n*♻️EXPIRE-YEAR*: *Custume*\n*♻️COUTRY*: ${anu.result.customer.country}\n*♻️NAME*: ${anu.result.customer.name}\n*♻️ADDRESS*: ${anu.result.customer.address}`
+				   itsmeiky.sendMessage(from, teks, text, {quoted: iky})
+				   await limitAdd(sender)
+				   break
+				 case 'ceritahorror': // Update By RzkyO & ItsmeikyXSec404
+					if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+                   reply(`_[❕] Loading_`)
+				   anu = await fetchJson(`https://naufalhoster.xyz/tools/story_horror?apikey=IgygEb-7vT4iB-h2zOyi`, {method:'get'})
+				   teks = `*Hasil Cerita*\n*Nama Cerita*: ${anu.result.title}\n*Cerita*: ${anu.result.story}`
 				   itsmeiky.sendMessage(from, teks, text, {quoted: iky})
 				   await limitAdd(sender)
 				   break
@@ -3251,7 +3260,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 					const uangku = checkATMuser(sender)
-                    wew = fs.readFileSync(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
+                    wew = fs.readFileSync(`./src/logo.jpg`)
                     shiz = ` ◪ *INFO DEVELOPER*
   ❏ Nama: ItsmeikyXSec404
   ❏ Wa: wa.me/6281281872699
@@ -3410,6 +3419,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}github
   ├─ ❏ ${prefix}kurs
   ├─ ❏ ${prefix}cersex
+  ├─ ❏ ${prefix}ceritahorror
   ├─ ❏ ${prefix}infofilm2
   ├─ ❏ ${prefix}heroml
   ├─ ❏ ${prefix}newsinfo
@@ -3603,7 +3613,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
   └─ ❏ ${prefix}afk
   
 ◪ *POWERED BY ITSMEIKYXSEC404*`
-                    itsmeiky.sendMessage(from, wew, image, { quoted: iky caption: shiz })
+                    itsmeiky.sendMessage(from, wew, image, { quoted: iky, caption: shiz })
 					await costum(ind.menu(pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role), text, tescuk, cr)
 					break
 		case 'donasi':
