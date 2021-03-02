@@ -3267,7 +3267,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ❏ Ig: https://instagram.com/itsmeikyxsec404
   ----------------------------------
 ◪ *INFO SHIZUKA*
-  ❏ Nama: SHIZUKA 
+  ❏ Nama: SHIZUKA
   ❏ Web: https://shizukaa.xyz/
   ❏ Web Api: https://shizukaa.xyz/
   ----------------------------------
@@ -3614,7 +3614,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
   
 ◪ *POWERED BY ITSMEIKYXSEC404*`
                     itsmeiky.sendMessage(from, wew, image, { quoted: iky, caption: shiz })
-					await costum(ind.menu(pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role), text, tescuk, cr)
 					break
 		case 'donasi':
 		case 'donate':
