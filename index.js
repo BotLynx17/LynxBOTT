@@ -1151,7 +1151,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				reply(teks.trim())
 				await limitAdd(sender)
 				break
-		case 'bitly':
+		case 'shortlink':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1162,7 +1162,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				reply(hasil)
 				await limitAdd(sender)
 				break
-		case 'cuttly':
+		case 'shortlink2':
 				 // Update By RzkyO & ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1173,7 +1173,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				reply(hasil)
 				await limitAdd(sender)
 				break
-		case 'tinyurl':
+		case 'shortlink3':
 				 // Update By RzkyO & ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1184,7 +1184,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				reply(hasil)
 				await limitAdd(sender)
 				break
-		case 'shrtco':
+		case 'shortlink4':
 				 // Update By RzkyO & ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1192,6 +1192,28 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.updatePresence(from, Presence.composing) 
 				data = await fetchJson(`http://lolhuman.herokuapp.com/api/shortlink2?url=${args[0]}&apikey=WEMPYGANSS`)
 				hasil = `link : ${args[0]}\n\nOutput : ${data.result}`
+				reply(hasil)
+				await limitAdd(sender)
+				break
+		case 'shortlink5':
+				 // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				itsmeiky.updatePresence(from, Presence.composing) 
+				data = await fetchJson(`https://onlydevcity.herokuapp.com/api/short/vgd?url=${args[0]}&apikey=onlyonedeveloper`)
+				hasil = `link : ${args[0]}\n\nOutput : ${data.result.link}`
+				reply(hasil)
+				await limitAdd(sender)
+				break
+		case 'shortlink6':
+				 // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				itsmeiky.updatePresence(from, Presence.composing) 
+				data = await fetchJson(`https://onlydevcity.herokuapp.com/api/short/isgd?url=${args[0]}&apikey=onlyonedeveloper`)
+				hasil = `link : ${args[0]}\n\nOutput : ${data.result.link}`
 				reply(hasil)
 				await limitAdd(sender)
 				break
@@ -1817,6 +1839,77 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih hasilnya kak...'})
 				await limitAdd(sender)
 				break
+		case '8bit': // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(5)
+				ll1 = ct.split("|")[0];
+                ll2 = ct.split("|")[1];
+				reply(ind.wait())
+				anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/textpro/onedev13?text=${ll1}&text2=${ll2}&theme=8bit&apikey=onlyonedeveloper`)
+				buffer = await getBuffer(anu.result.url)
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih hasilnya kak...'})
+				await limitAdd(sender)
+				break
+		case 'googlesearch': // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(14)
+				ll1 = ct.split("|")[0];
+                ll2 = ct.split("|")[1];
+				ll3 = ct.split("|")[2];
+				reply(ind.wait())
+				anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&text3=${ll3}&theme=google-suggestion&apikey=onlyonedeveloper`)
+				buffer = await getBuffer(anu.result.url)
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih hasilnya kak...'})
+				await limitAdd(sender)
+				break
+		case 'glitch': // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(7)
+				ll1 = ct.split("|")[0];
+                ll2 = ct.split("|")[1];
+				reply(ind.wait())
+				anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&theme=glitch&apikey=onlyonedeveloper`)
+				buffer = await getBuffer(anu.result.url)
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih hasilnya kak...'})
+				await limitAdd(sender)
+				break
+		case 'pubglogo': // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(5)
+				ll1 = ct.split("|")[0];
+                ll2 = ct.split("|")[1];
+				reply(ind.wait())
+				anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/textmaker/game?text=${ll1}&text2=${ll2}&theme=pubg&apikey=onlyonedeveloper`)
+				buffer = await getBuffer(anu.result.url)
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih hasilnya kak...'})
+				await limitAdd(sender)
+				break
+		case 'battlefield': // Update By RzkyO & ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(12)
+				ll1 = ct.split("|")[0];
+                ll2 = ct.split("|")[1];
+				reply(ind.wait())
+				anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/textmaker/game?text=${ll1}&text2=${ll2}&theme=battlefield&apikey=onlyonedeveloper`)
+				buffer = await getBuffer(anu.result.url)
+				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih hasilnya kak...'})
+				await limitAdd(sender)
+				break
 		case 'gamelogo': // Update By RzkyO & ItsmeikyXSec404 
 				gatauda = body.slice(9)
                  if (!isRegistered) return reply( ind.noregis())
@@ -2314,6 +2407,19 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					teks = '=================\n'
 					for (let i of data.result) {
 						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
+					}
+					reply(teks.trim())
+					await limitAdd(sender)
+					break
+				case 'asmaulhusna': // Update By RzkyO & ItsmeikyXSec404	
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					asu = await fetchJson(`https://onlydevcity.herokuapp.com/api/muslim/asmaulhusna?apikey=onlyonedeveloper`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of asu.result.data) {
+						teks += `*Nomor:* : ${i.index}\n*Latin* : ${i.latin}\n*Arab* : ${i.arabic}\n*Translate Indo* : ${i.translation_id}\n*Translate English* : ${i.translation_en}\n=================\n`
 					}
 					reply(teks.trim())
 					await limitAdd(sender)
@@ -2943,6 +3049,16 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, buffer7, image, {quoted: iky, caption: capt})
 					await limitAdd(sender)
 					break
+		case 'fakeaddress': // Update By RzkyO & ItsmeikyXSec404
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					reply(`[❕] Loading`)
+					anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/fakedata?country=en&apikey=onlyonedeveloper`)
+					teks = `➸ *Nama* : ${anu.result.name}\n*➸ Birthday :* ${anu.result.birthday}\n*➸ Address :* ${anu.result.address}\n*➸ City :* ${anu.result.city}\n*➸ Region :* ${anu.result.region}\n*➸ Country :* ${anu.result.country}\n*➸ Zip Code :* ${anu.result.zip}\n*➸ Phone Number :* ${anu.result.phone_number}\n*➸ Username :* ${anu.result.username}\n*➸ Password :* ${anu.result.password}\n*➸ Email :* ${anu.result.email}`
+					itsmeiky.sendMessage(from, teks, text, {quoted: iky})
+					await limitAdd(sender)
+					break
 		case 'heroml':  // Update By RzkyO & ItsmeikyXSec404
 					if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -3344,6 +3460,10 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}logoepep3
   ├─ ❏ ${prefix}logoepep4
   ├─ ❏ ${prefix}logoepep5
+  ├─ ❏ ${prefix}8bit
+  ├─ ❏ ${prefix}googlesearch
+  ├─ ❏ ${prefix}glitch
+  ├─ ❏ ${prefix}pubglogo
   ├─ ❏ ${prefix}gamelogo
   ├─ ❏ ${prefix}pornlogo
   ├─ ❏ ${prefix}metallogo
@@ -3360,12 +3480,14 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}kalkulator
   ├─ ❏ ${prefix}lirik [teks]
   ├─ ❏ ${prefix}brainly [teks]l
-  ├─ ❏ ${prefix}bitly
-  ├─ ❏ ${prefix}cuttly
+  ├─ ❏ ${prefix}shortlink
+  ├─ ❏ ${prefix}shortlink2
+  ├─ ❏ ${prefix}shortlink3
+  ├─ ❏ ${prefix}shortlink4
+  ├─ ❏ ${prefix}shortlink5
+  ├─ ❏ ${prefix}shortlink6
   ├─ ❏ ${prefix}meme
   ├─ ❏ ${prefix}darkjoke
-  ├─ ❏ ${prefix}tinyurl
-  ├─ ❏ ${prefix}shrtco
   ├─ ❏ ${prefix}chord [teks]
   ├─ ❏ ${prefix}katabijak 
   ├─ ❏ ${prefix}faktaunik 
@@ -3392,6 +3514,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
   │
   │◪ *INFORMATION*
   │
+  ├─ ❏ ${prefix}asmaulhusna
   ├─ ❏ ${prefix}bahasa
   ├─ ❏ ${prefix}kodenegara
   ├─ ❏ ${prefix}infogempa
@@ -3402,7 +3525,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}ceknamaff
   ├─ ❏ ${prefix}namaninja
   ├─ ❏ ${prefix}ccgenerator
-  ├─ ❏ ${prefix}shrtco
+  ├─ ❏ ${prefix}fakeaddress
   ├─ ❏ ${prefix}newsinfo
   ├─ ❏ ${prefix}tribunews
   ├─ ❏ ${prefix}tiktokstalk
