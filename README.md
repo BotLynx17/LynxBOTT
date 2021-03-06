@@ -1,4 +1,4 @@
-<h1 align="center">そのメイキー <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="40px" alt="hi"><br>Itsmeiky Was Hare!</h1>
+<h1 align="center">そのメイキー <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="40px" alt="hi"><br>ItsmeZii Was Hare!</h1>
 
 <p align="center">
 <img src="https://i.ibb.co/3RZ9ZCY/c0c15637fa14.jpg" width="100%" alt="API Giphy logo"/>
@@ -49,9 +49,9 @@
  #sosial media
 
 
-* [`WhatsApp Admin `](https://wa.me/6281281872699)
+* [`WhatsApp Admin `](https://wa.me/6283171821465)
 
-* [`ShizukaAPIs `](https://api.shizukaa.xyz/)
+* [`ShizukaAPIs `](https://api.shizukaa.zii/)
 
-* [`Website BOT`](https://shizukaa.xyz)
+* [`Website BOT`](https://shizukaa.zii)
 
