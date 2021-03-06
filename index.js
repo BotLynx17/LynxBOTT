@@ -256,30 +256,30 @@ function kyun(seconds){
 }
 /********** FUNCTION ***************/
 
-const itsmeiky = new WAConnection()
-   itsmeiky.on('qr', qr => {
+const lynx  = new WAConnection()
+   lynx .on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(color('[','white'),color('∆','red'),color(']','white'),color('QR code is ready, Scan now..','white'),color('ITSMEIKY','red'),color('XSEC404','lime'))
 })
 
-itsmeiky.on('credentials-updated', () => {
-	const authInfo = itsmeiky.base64EncodedAuthInfo()
+lynx .on('credentials-updated', () => {
+	const authInfo = lynx .base64EncodedAuthInfo()
    console.log(`credentials updated!`)
    fs.writeFileSync('./session.json', JSON.stringify(authInfo, null, '\t'))
 })
-fs.existsSync('./session.json') && itsmeiky.loadAuthInfo('./session.json')
-itsmeiky.connect();
+fs.existsSync('./session.json') && lynx .loadAuthInfo('./session.json')
+lynx.connect();
 
 
-itsmeiky.on('group-participants-update', async (anu) => {
+lynx .on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
 		try {
-			const mdata = await itsmeiky.groupMetadata(anu.jid)
+			const mdata = await lynx .groupMetadata(anu.jid)
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
 				try {
-					ppimg = await itsmeiky.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+					ppimg = await lynx .getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
@@ -332,10 +332,10 @@ itsmeiky.on('group-participants-update', async (anu) => {
 			const tescuk = ["0@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const q = args.join(' ')
-			const botNumber = itsmeiky.user.jid
+			const botNumber = lynx .user.jid
 			const sender = isGroup ? iky.participant : iky.key.remoteJid
-			pushname = itsmeiky.contacts[sender] != undefined ? itsmeiky.contacts[sender].vname || itsmeiky.contacts[sender].notify : undefined
-			const groupMetadata = isGroup ? await itsmeiky.groupMetadata(from) : ''
+			pushname = lynx .contacts[sender] != undefined ? lynx .contacts[sender].vname || itsmeiky.contacts[sender].notify : undefined
+			const groupMetadata = isGroup ? await lynx .groupMetadata(from) : ''
 			const groupName = isGroup ? groupMetadata.subject : ''
 			const groupId = isGroup ? groupMetadata.jid : ''
 			const groupMembers = isGroup ? groupMetadata.participants : ''
@@ -762,7 +762,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 		itsmeiky.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`Link Group Terdeteksi maaf ${sender.split("@")[0]} anda akan di kick dari group 5detik lagi`)
+		reply(`Anak Ajg, Grup ini anti link! ${sender.split("@")[0]} anda akan di kick dari group 5detik lagi`)
 		setTimeout( () => {
 			itsmeiky.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -838,7 +838,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                 		hasiltf = jumblah - fee
                 		addKoinUser(tujuantf, hasiltf)
                 		confirmATM(sender, jumblah)
-                		addKoinUser('6281281872699@s.whatsapp.net', fee)
+                		addKoinUser('6283171821465@s.whatsapp.net', fee)
                 		reply(`*「 SUKSES 」*\n\nPengiriman uang telah sukses\nDari : +${sender.split("@")[0]}\nKe : +${tujuan}\njJumlah transfer : ${jumblah}\nPajak : ${fee}`)
                 		break
               case 'hai':
