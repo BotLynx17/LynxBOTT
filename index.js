@@ -49,7 +49,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Admin Lynx Bott\n' 
             + 'ORG: Pengembang Lynx Bot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6283171821455:+62 831-7182-1465\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6283171821465:+62 831-7182-1465\n' 
             + 'END:VCARD'
 prefix = '•'
 blocked = []   
