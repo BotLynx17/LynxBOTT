@@ -55,7 +55,7 @@ prefix = '•'
 blocked = []   
 limitawal = 99999
 memberlimit = 0
-cr = '*SHIZUKA THIS IS ALREADY VERIFIED*'
+cr = '*LYNX THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
 const ownerNumber = ["6283171821465@s.whatsapp.net"] 
