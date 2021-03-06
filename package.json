@@ -1,7 +1,7 @@
 {
-  "name": "ITSMEIKY",
+  "name": "ITSMEZII",
   "version": "1.0.0",
-  "description": "Shizuka for whatsapp online with termux",
+  "description": "LynxBot for whatsapp online with termux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -18,15 +18,15 @@
     "whatsapp",
     "bot"
   ],
-  "author": "ItsmeikyXSec404",
+  "author": "ItsmeZii181",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ItsmeikyXSec4O4/ShizukaBOT.git"
+    "url": "git+https://github.com/BotLynx17/LynxBOTT.git"
   },
   "bugs": {
-    "url": "https://github.com/ItsmeikyXSec4O4/ShizukaBOT/issues"
+    "url": "https://github.com/BotLynx17/LynxBOTT/issues"
   },
-"homepage": "https://github.com/ItsmeikyXSec4O4/readme.md",
+"homepage": "https://github.com/BotLynx17/LynxBOTT/readme.md",
 "license": "ISC",
 "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
