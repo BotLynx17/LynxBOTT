@@ -2,7 +2,7 @@
 //Kasih Nama Itsmeiky Lah Bang Hargain Dikit Gw Capek :(
 //And Gw Mencium Bau Bau Ada Kang Colong Case Nih :v
 //Gak Usah Di Hapus Gblk Dimana Harga Diri Lu Gw Capek2 Ngefix malah di hapus
-//Fixed Some Bug By ItsmeikyXSec404 & RzkyO
+//Fixed Some Bug By ItsmeZii181 / Lynx Bott
 const {
    WAConnection,
    MessageType,
@@ -47,19 +47,19 @@ const { ind } = require('./language')
 /********** MENU SETTING **********/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Admin Shizuka BOT\n' 
-            + 'ORG: Pengembang Shizuka BOT;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6281281872699:+62 812-8187-2699\n' 
+            + 'FN:Admin Lynx Bott\n' 
+            + 'ORG: Pengembang Lynx Bot;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6283171821455:+62 831-7182-1465\n' 
             + 'END:VCARD'
-prefix = '$'
+prefix = '•'
 blocked = []   
 limitawal = 99999
 memberlimit = 0
 cr = '*SHIZUKA THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6281212594112@s.whatsapp.net"] 
-const pacarNumber = ["6281281872699@s.whatsapp.net"]
+const ownerNumber = ["6283171821465@s.whatsapp.net"] 
+const pacarNumber = ["6285783291966@s.whatsapp.net"]
 /************************************/
 
        
