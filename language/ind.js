@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : jangan sampai lupa nomer ini karena ini penting!`
+	return`*「 DATA KEPALA BAPAK KAU 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : jangan sampai lupa nomer ini karena ini penting!`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -124,7 +124,7 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role) => { 
 	return `「 *LYNX BOT* 」
 ◪ *INFO DEVELOPER*
-  ❏ Nama: ItsmeikyXSec404
+  ❏ Nama: M.ALFARIZI
 *SOSIAL MEDIA*
 ❏ Wa: wa.me/6283171821465
   ❏ Ig: https://instagram.com/lynx.tipi
