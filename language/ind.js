@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 PENDAFTARAN 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar shizuka|22*`
+	return`*「 PENDAFTARAN 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar nama bapak/mamakmu|umur kau ajg:v*`
 }
 
 exports.rediregis = () => {
@@ -63,7 +63,7 @@ exports.nsfwoff = () => {
 }
 
 exports.bug = () => {
-	return`*Masalah telah di laporkan ke owner SHIZUKA, Laporan palsu atau main² tidak akan ditanggapi.*`
+	return`*Masalah telah di laporkan ke owner LYNX, Laporan palsu atau main² tidak akan ditanggapi.*`
 }
 
 exports.wrongf = () => {
@@ -122,14 +122,15 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 //You only get your name fuck !!
 //If INFO DEVELOPER not in change, its okey!!
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role) => { 
-	return `「 *SHIZUKA BOT* 」
+	return `「 *LYNX BOT* 」
 ◪ *INFO DEVELOPER*
   ❏ Nama: ItsmeikyXSec404
-  ❏ Wa: wa.me/6281281872699
-  ❏ Ig: https://instagram.com/itsmeikyxsec404
+*SOSIAL MEDIA*
+❏ Wa: wa.me/6283171821465
+  ❏ Ig: https://instagram.com/lynx.tipi
   ----------------------------------
-◪ *INFO SHIZUKA*
-  ❏ Nama: SHIZUKA 
+◪ *INFO LYNX*
+  ❏ Nama: LYNX BOTT
   ❏ Web: https://shizukaa.xyz/
   ❏ Web Api: https://shizukaa.xyz/
   ----------------------------------
@@ -446,7 +447,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}qrcode
   └─ ❏ ${prefix}afk
   
-◪ *POWERED BY ITSMEIKYXSEC404*
+◪ *POWERED BY M.ALFARIZI*
 `
 }
 
