@@ -51,9 +51,9 @@ const vcard = 'BEGIN:VCARD\n'
             + 'ORG: Pengembang Lynx Bot;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6283171821465:+62 831-7182-1465\n' 
             + 'END:VCARD'
-prefix = '•'
+prefix = '+'
 blocked = []   
-limitawal = 99999
+limitawal = 200
 memberlimit = 0
 cr = '*LYNX THIS IS ALREADY VERIFIED*'
 
